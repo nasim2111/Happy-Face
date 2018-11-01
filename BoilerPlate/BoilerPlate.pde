@@ -1,6 +1,6 @@
 //Global Variables
 color black = #EAFA14;
-color red = #ED1D39;
+color red1 = #ED1D39;
 int faceX = width/2;
 int faceY= height/2;
 int leftEyeX= width/4;
@@ -22,14 +22,14 @@ rightEyeY = height/4;
 eyeDiameter= width/8;
 
 ellipse (faceX, faceY, width, width);//face
-ellipse (leftEyeX, leftEyeX, eyeDiameter, eyeDiameter);//lefteye
+ellipse (leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);//lefteye
 ellipse (rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);//righteye
 triangle (width*2/4,height*1/3,width*3/4,height*2/3,width*1/4,height*3/4);//nose
 fill(#F5161E);
 }
 
 void draw() {
-  fill(red);
+  fill(red1);
   ellipse(random(width),random(height),width*1/75,width*1/75);//measles
   ellipse(width*1/4, height*1/4,width*1/15,width*1/15);//measlesize
   fill(#0F0109);
